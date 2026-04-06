@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 30px;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+form{
+    background-color: #d3d3d3;
+    padding: 20px 25px;
+    border-radius: 5px;
+    width: 40%;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0,0.2);
+}
+
+h1{
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #000;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: normal;
+    color:#000;
+}
+
+input[type="text"],
+input[type="password"],
+select{
+    width:100%;
+    padding: 6px;
+    margin-bottom: 10px;
+    border:1px solid #999;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.checkbox{
+    margin: 10px 0;
+}
+
+.checkbox label{
+    margin-right: 10px;
+    display: inline-block;
+}
+
+input[type="checkbox"]{
+    margin-right: 4px;
+}
+
+button{
+    width: 100%;
+    background-color: #004080;
+    color: white;
+    border: none;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #003366;
+}
+
+.error{
+    color:red;
+    font-size: 0.8em;
+    margin-top: -8px;
+    margin-bottom: 5px;
+}
+
+textarea{
+    display: none;
+    width: 100%;
+    margin-top: 15px;
+    font-family: monospace;
+    font-size: 13px;
+    padding: 6px;
+    border: 1px solid #999;
+}
+
+label.red{
+    color: red;
+}
+
+.thanks{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 30px;
+    animation: flicker 1s infinite; 
+}
+
+#thankYouMessage{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 30%;
+    height: 300px;
+    padding: 2rem;
+    background-color: #fff;
+    border:1px solid #707070;
+    border-radius: 20px;
+}
+
+@keyframes flicker{
+    0%{color:red;font-size: 24px;}
+    50%{color:blue;font-size: 28px;}
+    100%{color:green;font-size: 24px;}
+}

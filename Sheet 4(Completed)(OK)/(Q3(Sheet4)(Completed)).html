@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Q3</title>
+</head>
+<body>
+    <h1>Student Sorting</h1>
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name"><br>
+    <label for="age">Age:</label>
+    <input type="number" name="age" id="age"><br>
+    <label for="gpa">GPA:</label>
+    <input type="number" step="0.001" name="gpa" id="gpa" max="4.000"><br>
+    <button onclick="addStudent()">AddStudent</button><br>
+    <label for="sortOrder">Sort By:</label>
+    <select name="sortOrder" id="sortOrder" onchange="sortStudents()">
+        <option value="gpa">Descending Order by GPA</option>
+        <option value="name">Ascending Order by Name</option>
+    </select><br>
+    <textarea id="results" rows="10" cols="50" readonly></textarea>
+    <script src="Q3(Sheet4).js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Sheet 6</title> 
+        <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <form id="formLogin">
+        <h1>Registration Form</h1>
+        <label for="username" id="usernameLabel">Username:</label>
+        <input type="text" name="username" id="username">
+        <p id="usernameError" class="error"></p>
+
+        <label for="password" id="passwordLabel">Password:</label>
+        <input type="password" name="password" id="password">
+        <p id="passwordError" class="error"></p>
+
+        <label for="semester" id="semesterLable">semester:</label>
+        <select name="semester" id="semester">
+            <option value="" selected disabled>Select</option>
+            <option value="first">1st</option>
+            <option value="second">2nd</option>
+            <option value="third">3rd</option>
+            <option value="fourth">4th</option>
+        </select>
+        <p id="semesterError" class="error"></p>
+
+        <div class="checkbox">
+            <label><input type="checkbox" name="COMP102" id="COMP102" value="COMP102">COMP102</label>
+            <label><input type="checkbox" name="COMP206" id="COMP206" value="COMP206">COMP206</label>
+            <label><input type="checkbox" name="Math101" id="Math101" value="Math101">Math101</label>
+        </div>
+
+        <label><input type="checkbox" name="newsletter" id="newsletter">Newsletter:</label>
+        <button type="submit">Register</button>
+        <textarea id="formData" rows="6" cols="30" readonly></textarea>
+    </form>
+    <div id="thankYouMessage" style="display:none;"></div>
+    <script src="Sheet6.js"></script>
+</body>
+</html>

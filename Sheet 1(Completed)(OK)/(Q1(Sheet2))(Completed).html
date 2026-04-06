@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CalcOperations</title>
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th{
+            background-color: #4CAF50;
+            color: white;
+        }
+        th,td{
+            border:1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        .error{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+        <label for="operand1">Operand 1:</label><br>
+        <input type="number" name="operand1" id="operand1"><br>
+        <label for="operand2">Operand 2:</label><br>
+        <input type="number" name="operand2" id="operand2">
+        <span id="operand2Error" class="error"></span><br>
+        <button onclick="Calculate()">Calculate</button>
+    <div id="results"></div>
+    <script src="(Q1(Sheet2)).js"></script>
+</body>
+</html>

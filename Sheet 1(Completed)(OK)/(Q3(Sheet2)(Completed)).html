@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Q3</title>
+    <style>
+        .error{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pizza Order Form</h1>
+    <form id="pizzaForm">
+<label for="name">Name:</label>
+<input type="text" id="name" name="name">
+<span id="nameError" class="error"></span><br>
+<label for="size">Size:</label>
+<select name="size" id="size">
+    <option value="" selected disabled>Select Size</option>
+    <option value="small">Small</option>
+    <option value="medium">Medium</option>
+    <option value="large">Large</option>
+</select><br>
+<span id="sizeError" class="error"></span>
+<label>Toppings:</label><br>
+<input type="checkbox" name="toppings" id="pepperoni" value="pepperoni">
+<label for="pepperoni">pepperoni</label><br>
+<input type="checkbox" id="mushrooms" name="toppings" value="mushrooms">
+<label for="mushrooms">mushrooms</label><br>
+<input type="checkbox" name="toppings" id="sausage" value="sausage">
+<label for="sausage">Sausage</label><br>
+<button type="button" onclick="submitForm()">Submit</button>
+    </form>
+    <script src="(Q3(Sheet2)).js"></script>
+</body>
+</html>
